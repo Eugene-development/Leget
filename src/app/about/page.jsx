@@ -38,16 +38,13 @@ function Culture() {
       <Container className="mt-16">
         <GridList>
           <GridListItem title="Лояльность" invert>
-            Our team has been with us since the beginning because none of them
-            are allowed to have LinkedIn profiles.
+            В нашей компании мы всегда стремимся к установлению долгосрочных, продуктивных и доверительных отношений со всеми нашими клиентами. 
           </GridListItem>
           <GridListItem title="Доверие" invert>
-            We don’t care when our team works just as long as they are working
-            every waking second.
+            Для нас взаимное доверие — это фундамент нашего долгосрочного партнерства. Ведь Ваш успех – наша общая основная цель.
           </GridListItem>
           <GridListItem title="Конфиденциальность" invert>
-            You never know what someone is going through at home and we make
-            sure to never find out.
+            Мы строго соблюдаем стандарты защиты информации, гарантируя, что ваша конфиденциальность останется неприкосновенной.
           </GridListItem>
         </GridList>
       </Container>
@@ -57,7 +54,7 @@ function Culture() {
 
 const team = [
   {
-    title: 'Leadership',
+    title: 'Лендинг',
     people: [
       {
         name: 'Leslie Alexander',
@@ -77,52 +74,62 @@ const team = [
     ],
   },
   {
-    title: 'Team',
+    title: 'Коммерческий сайт',
     people: [
       {
-        name: 'Chelsea Hagon',
+        name: 'Leslie Alexander',
+        role: 'Co-Founder / CEO',
+        image: { src: imageLeslieAlexander },
+      },
+      {
+        name: 'Michael Foster',
+        role: 'Co-Founder / CTO',
+        image: { src: imageMichaelFoster },
+      },
+      {
+        name: 'Dries Vincent',
+        role: 'Partner & Business Relations',
+        image: { src: imageDriesVincent },
+      },
+    ],
+  },
+  {
+    title: 'Фирменный сайт',
+    people: [
+      {
+        name: 'Leslie Alexander',
+        role: 'Co-Founder / CEO',
+        image: { src: imageLeslieAlexander },
+      },
+      {
+        name: 'Michael Foster',
+        role: 'Co-Founder / CTO',
+        image: { src: imageMichaelFoster },
+      },
+      {
+        name: 'Dries Vincent',
+        role: 'Partner & Business Relations',
+        image: { src: imageDriesVincent },
+      },
+    ],
+  },
+  {
+    title: 'Интернет магазин',
+    people: [
+      {
+        name: 'ZOV',
         role: 'Senior Developer',
         image: { src: imageChelseaHagon },
       },
       {
-        name: 'Emma Dorsey',
+        name: 'Точка',
         role: 'Senior Designer',
         image: { src: imageEmmaDorsey },
       },
       {
-        name: 'Leonard Krasner',
+        name: 'Биохим',
         role: 'VP, User Experience',
         image: { src: imageLeonardKrasner },
-      },
-      {
-        name: 'Blake Reid',
-        role: 'Junior Copywriter',
-        image: { src: imageBlakeReid },
-      },
-      {
-        name: 'Kathryn Murphy',
-        role: 'VP, Human Resources',
-        image: { src: imageKathrynMurphy },
-      },
-      {
-        name: 'Whitney Francis',
-        role: 'Content Specialist',
-        image: { src: imageWhitneyFrancis },
-      },
-      {
-        name: 'Jeffrey Webb',
-        role: 'Account Coordinator',
-        image: { src: imageJeffreyWebb },
-      },
-      {
-        name: 'Benjamin Russel',
-        role: 'Senior Developer',
-        image: { src: imageBenjaminRussel },
-      },
-      {
-        name: 'Angela Fisher',
-        role: 'Front-end Developer',
-        image: { src: imageAngelaFisher },
       },
     ],
   },
@@ -190,22 +197,29 @@ export default async function About() {
     <>
       <PageIntro eyebrow="О нас" title="Компания для интернет бизнеса">
         <p>
-          We believe that our strength lies in our collaborative approach, which
-          puts our clients at the center of everything we do.
+          Приветствуем вас в [Название Компании] – вашем надежном партнере в мире цифрового успеха!
         </p>
         <div className="mt-10 max-w-2xl space-y-6 text-base">
           <p>
-            Studio was started by three friends who noticed that developer
-            studios were charging clients double what an in-house team would
-            cost. Since the beginning, we have been committed to doing things
-            differently by charging triple instead.
+            Мы – команда профессионалов, специализирующихся на поддержке и развитии интернет-бизнеса. Наша миссия – создание уникальных решений, позволяющих вашему онлайн-проекту процветать в современном цифровом мире.
           </p>
-          <p>
-            At Studio, we’re more than just colleagues — we’re a family. This
-            means we pay very little and expect people to work late. We want our
-            employees to bring their whole selves to work. In return, we just
-            ask that they keep themselves there until at least 6:30pm.
+          {/* <p>
+            Наши услуги:
           </p>
+          <ul>
+            <li>Веб-Разработка и Дизайн: Ваш виртуальный прилавок – это визитная карточка вашего бренда. Мы создаем современные, функциональные и привлекательные веб-сайты, которые не только привлекают внимание, но и конвертируют посетителей в клиентов.</li>
+            <li>Оптимизация и Продвижение: Позиционируйтесь выше конкурентов с нашими услугами по SEO и маркетингу. Мы разрабатываем стратегии, которые повышают видимость вашего бренда в поисковых системах и приводят к росту органического трафика.</li>
+            <li>Эффективная Реклама: Мы создаем кампании цифровой рекламы, которые максимизируют ваш бюджет и достигают целевой аудитории. Работаем с контекстной рекламой, социальными сетями и другими платформами.</li>
+            <li>Аналитика и Управление Данными: Решения на основе данных - ключ к принятию правильных бизнес-решений. Мы предоставляем инструменты аналитики, которые помогают вам понять поведение клиентов и оптимизировать ваш бизнес.</li>
+            <li>ИТ-Консалтинг и Поддержка: Наша команда экспертов всегда готова помочь в решении технических вопросов, обеспечивая стабильную и бесперебойную работу вашего онлайн-проекта.</li>
+          </ul>
+          <p>Почему [Название Компании]?</p>
+          <ol>
+            <li>Опыт и Экспертиза: Мы обладаем многолетним опытом работы в индустрии интернет-бизнеса и постоянно следим за последними трендами и технологиями.</li>
+            <li>Индивидуальный Подход: Мы понимаем, что каждый проект уникален. Поэтому мы создаем индивидуальные стратегии и решения, соответствующие вашим конкретным потребностям.</li>
+            <li>Результативность: Наш успех измеряется успехами наших клиентов. Мы гордимся тем, что помогаем им достигать своих целей и развиваться в цифровом пространстве.</li>
+          </ol>
+          <p>Сделайте ваш интернет-бизнес процветающим с [Название Компании] – вашим надежным партнером в цифровом мире!</p> */}
         </div>
       </PageIntro>
       <Container className="mt-16">
