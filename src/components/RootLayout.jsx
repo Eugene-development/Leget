@@ -134,7 +134,7 @@ function NavigationRow({ children }) {
 
 function NavigationItem({ href, children }) {
   return (
-    <Link
+      <Link
       href={href}
       className="group relative isolate -mx-6 bg-neutral-950 px-6 py-10 even:mt-px sm:mx-0 sm:px-0 sm:py-16 sm:odd:pr-16 sm:even:mt-0 sm:even:border-l sm:even:border-neutral-800 sm:even:pl-16"
     >
@@ -143,17 +143,42 @@ function NavigationItem({ href, children }) {
     </Link>
   )
 }
+function NoLinkNavigationItem({ href, children }) {
+  return (
+      <p
+      className="group relative isolate -mx-6 bg-neutral-900 px-6 py-10 even:mt-px sm:mx-0 sm:px-0 sm:py-16 sm:odd:pr-16 sm:even:mt-0 sm:even:border-l sm:even:border-neutral-800 sm:even:pl-16"
+    >
+      {children}
+      <span className="absolute inset-y-0 -z-10 w-screen bg-neutral-900 opacity-0 transition group-odd:right-0 group-even:left-0 group-hover:opacity-100" />
+    </p>
+  )
+}
 
 function Navigation() {
+    const pathname = usePathname()
+  console.log(pathname)
+
   return (
     <nav className="mt-px font-display text-5xl font-medium tracking-tight text-white">
       <NavigationRow>
-        <NavigationItem href="/work">Направления</NavigationItem>
-        <NavigationItem href="/about">Разработки</NavigationItem>
+        {pathname !== "/work" ? 
+          <NavigationItem href="/work">Направления</NavigationItem> :
+          <NoLinkNavigationItem >Направления</NoLinkNavigationItem>
+        }
+        {pathname !== "/about" ? 
+          <NavigationItem href="/about">Разработки</NavigationItem> : 
+          <NoLinkNavigationItem >Разработки</NoLinkNavigationItem>
+        }
       </NavigationRow>
       <NavigationRow>
-        <NavigationItem href="/process">Сотрудничество</NavigationItem>
-        <NavigationItem href="/blog">Блог</NavigationItem>
+        {pathname !== "/process" ? 
+          <NavigationItem href="/process">Сотрудничество</NavigationItem> : 
+          <NoLinkNavigationItem >Сотрудничество</NoLinkNavigationItem>
+        }
+        {pathname !== "/blog" ? 
+         <NavigationItem href="/blog">Блог</NavigationItem> : 
+          <NoLinkNavigationItem >Блог</NoLinkNavigationItem>
+        }
       </NavigationRow>
     </nav>
   )
