@@ -149,7 +149,7 @@ function Navigation() {
     <nav className="mt-px font-display text-5xl font-medium tracking-tight text-white">
       <NavigationRow>
         <NavigationItem href="/work">Направления</NavigationItem>
-        <NavigationItem href="/about">О нас</NavigationItem>
+        <NavigationItem href="/about">Разработки</NavigationItem>
       </NavigationRow>
       <NavigationRow>
         <NavigationItem href="/process">Сотрудничество</NavigationItem>
