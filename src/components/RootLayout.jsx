@@ -146,7 +146,7 @@ function NavigationItem({ href, children }) {
 function NoLinkNavigationItem({ href, children }) {
   return (
       <p 
-      className="-mx-6 px-6 py-10  sm:mx-0 sm:px-0 sm:py-16 text-6xl font-extrabold sm:even:mt-0 sm:even:border-l sm:even:border-neutral-900 sm:even:pl-16"
+      className="-mx-6 px-6 py-10 sm:mx-0 sm:px-0 sm:py-16 text-6xl font-extrabold sm:even:mt-0 sm:even:border-l sm:even:border-neutral-900 sm:even:pl-16"
     >
       {children}
       <span className="absolute inset-y-0 -z-10 w-full bg-neutral-900 opacity-0 transition group-odd:right-0 group-even:left-0 group-hover:opacity-100" />
@@ -162,21 +162,21 @@ function Navigation() {
       <NavigationRow>
         {pathname !== "/work" ? 
           <NavigationItem href="/work">Направления</NavigationItem> :
-          <NoLinkNavigationItem >Направления</NoLinkNavigationItem>
+          <NoLinkNavigationItem>Направления</NoLinkNavigationItem>
         }
         {pathname !== "/about" ? 
-          <NavigationItem href="/about">Разработки</NavigationItem> : 
-          <NoLinkNavigationItem >Разработки</NoLinkNavigationItem>
+          <NavigationItem href="/about">Каталог</NavigationItem> : 
+          <NoLinkNavigationItem >Каталог</NoLinkNavigationItem>
         }
       </NavigationRow>
       <NavigationRow>
         {pathname !== "/process" ? 
           <NavigationItem href="/process">Сотрудничество</NavigationItem> : 
-          <NoLinkNavigationItem >Сотрудничество</NoLinkNavigationItem>
+          <NoLinkNavigationItem>Сотрудничество</NoLinkNavigationItem>
         }
         {pathname !== "/blog" ? 
          <NavigationItem href="/blog">Блог</NavigationItem> : 
-          <NoLinkNavigationItem >Блог</NoLinkNavigationItem>
+          <NoLinkNavigationItem>Блог</NoLinkNavigationItem>
         }
       </NavigationRow>
     </nav>

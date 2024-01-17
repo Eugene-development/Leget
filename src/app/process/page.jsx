@@ -177,6 +177,8 @@ function Deliver() {
 function Values() {
   return (
     <div className="relative mt-24 pt-24 sm:mt-32 sm:pt-32 lg:mt-40 lg:pt-40">
+
+      
       <div className="absolute inset-x-0 top-0 -z-10 h-[884px] overflow-hidden rounded-t-4xl bg-gradient-to-b from-neutral-50">
         <GridPattern
           className="absolute inset-0 h-full w-full fill-neutral-100 stroke-neutral-950/5 [mask-image:linear-gradient(to_bottom_left,white_40%,transparent_50%)]"
@@ -186,32 +188,29 @@ function Values() {
 
       <SectionIntro
         eyebrow="Сервис и поддержка"
-        title="Balancing reliability and innovation"
+        title="Мы всегда рядом"
       >
         <p>
-          We strive to stay at the forefront of emerging trends and
-          technologies, while completely ignoring them and forking that old
-          Rails project we feel comfortable using. We stand by our core values
-          to justify that decision.
+          Наши продукты постоянно развиваются, появляется новый функционал и потенциальные возможности. Если Вам нужна помощь, чтобы разобраться в той или иной ситуации, то мы готовы дать вам необходимую поддержку.
         </p>
       </SectionIntro>
 
       <Container className="mt-24">
         <GridList>
-          <GridListItem title="Meticulous">
+          <GridListItem title="Вопрос">
             The first part of any partnership is getting our designer to put
             your logo in our template. The second step is getting them to do the
             colors.
           </GridListItem>
-          <GridListItem title="Efficient">
+          <GridListItem title="Баг">
             We pride ourselves on never missing a deadline which is easy because
             most of the work was done years ago.
           </GridListItem>
-          <GridListItem title="Adaptable">
+          <GridListItem title="Предложение">
             Every business has unique needs and our greatest challenge is
             shoe-horning those needs into something we already built.
           </GridListItem>
-          <GridListItem title="Honest">
+          <GridListItem title="Помощь">
             We are transparent about all of our processes, banking on the simple
             fact our clients never actually read anything.
           </GridListItem>
@@ -235,6 +234,36 @@ export const metadata = {
     'We believe in efficiency and maximizing our resources to provide the best value to our clients.',
 }
 
+function Culture() {
+  return (
+    <div className="mt-24 rounded-4xl bg-neutral-950 py-24 sm:mt-32 lg:mt-40 lg:py-32">
+      <SectionIntro
+        eyebrow="Наша культура"
+        title="Баланс идей и навыков"
+        invert
+      >
+        <p>
+          Мы постоянно интегрируем в наши продукты передовые технологии и идеи наших партнёров и надёжно храним коммерческую тайну
+        </p>
+      </SectionIntro>
+      <Container className="mt-16">
+        <GridList>
+          <GridListItem title="Лояльность" invert>
+            В нашей компании мы всегда стремимся к установлению долгосрочных, продуктивных и доверительных отношений со всеми нашими клиентами. 
+          </GridListItem>
+          <GridListItem title="Доверие" invert>
+            Для нас взаимное доверие — это фундамент нашего долгосрочного партнерства. Ведь Ваш успех – наша общая основная цель.
+          </GridListItem>
+          <GridListItem title="Конфиденциальность" invert>
+            Мы строго соблюдаем стандарты защиты информации, гарантируя, что ваша конфиденциальность останется неприкосновенной.
+          </GridListItem>
+        </GridList>
+      </Container>
+    </div>
+  )
+}
+
+
 export default function Process() {
   return (
     <>
@@ -245,6 +274,8 @@ export default function Process() {
           the same five projects we’ve been developing for the past decade.
         </p>
       </PageIntro>
+            <Culture/>
+
 
       <div className="mt-24 space-y-24 [counter-reset:section] sm:mt-32 sm:space-y-32 lg:mt-40 lg:space-y-40">
         <Discover />

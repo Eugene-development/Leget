@@ -8,3 +8,18 @@
   font-stretch: 75% 125%;
   src: url('../fonts/Mona-Sans.var.woff2') format('woff2');
 }
+
+/* @layer base {
+  html {
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+  }
+
+  ul {
+    @apply ml-8 my-2 list-outside list-disc;
+  }
+
+  ol {
+    @apply ml-8 my-2 list-outside list-decimal;
+  }
+} */
