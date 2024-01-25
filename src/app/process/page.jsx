@@ -214,11 +214,11 @@ function Values() {
             We are transparent about all of our processes, banking on the simple
             fact our clients never actually read anything.
           </GridListItem>
-          <GridListItem title="Loyal">
+          <GridListItem title="Проблема">
             We foster long-term relationships with our clients that go beyond
             just delivering a product, allowing us to invoice them for decades.
           </GridListItem>
-          <GridListItem title="Innovative">
+          <GridListItem title="Отзыв">
             The technological landscape is always evolving and so are we. We are
             constantly on the lookout for new open source projects to clone.
           </GridListItem>
@@ -267,11 +267,9 @@ function Culture() {
 export default function Process() {
   return (
     <>
-      <PageIntro eyebrow="Our process" title="Как мы работаем">
+      <PageIntro eyebrow="Как мы работаем" title="Сотрудничество">
         <p>
-          We believe in efficiency and maximizing our resources to provide the
-          best value to our clients. The primary way we do that is by re-using
-          the same five projects we’ve been developing for the past decade.
+          Если Вас заинтересовало наше предложение, то просим Вас связаться с нами по телефону 8 (915) 400-00-20 или через форму контактной связи. Наши сотрудники дадут полную консультацию о нашей работе и возможностях сервиса.
         </p>
       </PageIntro>
             <Culture/>
