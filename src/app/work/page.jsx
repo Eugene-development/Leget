@@ -38,14 +38,14 @@ function CaseStudies({ caseStudies }) {
                     <Image
                       src={caseStudy.logo}
                       alt=""
-                      className="h-16 w-16 flex-none"
+                      className="h-24 w-24 flex-none"
                       unoptimized
                     />
-                    <h3 className="mt-6 text-sm font-semibold text-neutral-950 sm:mt-0 lg:mt-8">
+                    {/* <h3 className="mt-6 text-sm font-semibold text-neutral-950 sm:mt-0 lg:mt-8">
                       {caseStudy.client}
-                    </h3>
+                    </h3> */}
                   </div>
-                  <div className="mt-1 flex gap-x-4 sm:mt-0 lg:block">
+                  {/* <div className="mt-1 flex gap-x-4 sm:mt-0 lg:block">
                     <p className="text-sm tracking-tight text-neutral-950 after:ml-4 after:font-semibold after:text-neutral-300 after:content-['/'] lg:mt-2 lg:after:hidden">
                       {caseStudy.service}
                     </p>
@@ -54,7 +54,7 @@ function CaseStudies({ caseStudies }) {
                         {formatDate(caseStudy.date)}
                       </time>
                     </p>
-                  </div>
+                  </div> */}
                 </div>
                 <div className="col-span-full lg:col-span-2 lg:max-w-2xl">
                   <p className="font-display text-4xl font-medium text-neutral-950">
@@ -73,14 +73,14 @@ function CaseStudies({ caseStudies }) {
                       Подробнее
                     </Button>
                   </div>
-                  {caseStudy.testimonial && (
+                  {/* {caseStudy.testimonial && (
                     <Blockquote
                       author={caseStudy.testimonial.author}
                       className="mt-12"
                     >
                       {caseStudy.testimonial.content}
                     </Blockquote>
-                  )}
+                  )} */}
                 </div>
               </Border>
             </article>
@@ -149,9 +149,7 @@ export default async function Work() {
         title="Закрываем основные задачи"
       >
         <p>
-          We believe in efficiency and maximizing our resources to provide the
-          best value to our clients. The primary way we do that is by re-using
-          the same five projects we’ve been developing for the past decade.
+          Мы верим в эффективность и максимальное использование наших ресурсов, чтобы обеспечить максимальную ценность для наших клиентов.
         </p>
       </PageIntro>
 
@@ -161,8 +159,7 @@ export default async function Work() {
         className="mt-24 sm:mt-32 lg:mt-40"
         client={{ name: 'Mail Smirk', logo: logoMailSmirk }}
       >
-        We approached <em>Studio</em> because we loved their past work. They
-        delivered something remarkably similar in record time.
+        Наша компания <strong>Leget</strong> предоставит Вам стартовое решение в течении 24 часов.
       </Testimonial>
 
       <Clients />
