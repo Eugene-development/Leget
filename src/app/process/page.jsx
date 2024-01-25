@@ -198,29 +198,22 @@ function Values() {
       <Container className="mt-24">
         <GridList>
           <GridListItem title="Вопрос">
-            The first part of any partnership is getting our designer to put
-            your logo in our template. The second step is getting them to do the
-            colors.
+            Ответим на все интересующие вас вопросы.
           </GridListItem>
           <GridListItem title="Баг">
-            We pride ourselves on never missing a deadline which is easy because
-            most of the work was done years ago.
+            Устраним дефекты с функционалом сайтов.
           </GridListItem>
           <GridListItem title="Предложение">
-            Every business has unique needs and our greatest challenge is
-            shoe-horning those needs into something we already built.
+            Выслушаем идеи и предложения по развитию проекта.
           </GridListItem>
           <GridListItem title="Помощь">
-            We are transparent about all of our processes, banking on the simple
-            fact our clients never actually read anything.
+            Окажем помощь в сложной ситуации.
           </GridListItem>
           <GridListItem title="Проблема">
-            We foster long-term relationships with our clients that go beyond
-            just delivering a product, allowing us to invoice them for decades.
+            Решим проблемы общего характера.
           </GridListItem>
           <GridListItem title="Отзыв">
-            The technological landscape is always evolving and so are we. We are
-            constantly on the lookout for new open source projects to clone.
+            Выслушаем честный отзыв о нашей работе.
           </GridListItem>
         </GridList>
       </Container>
