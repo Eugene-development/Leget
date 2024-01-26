@@ -113,26 +113,6 @@ const team = [
       },
     ],
   },
-  {
-    title: 'Интернет магазин',
-    people: [
-      {
-        name: 'ZOV',
-        role: 'Senior Developer',
-        image: { src: imageChelseaHagon },
-      },
-      {
-        name: 'Точка',
-        role: 'Senior Designer',
-        image: { src: imageEmmaDorsey },
-      },
-      {
-        name: 'Биохим',
-        role: 'VP, User Experience',
-        image: { src: imageLeonardKrasner },
-      },
-    ],
-  },
 ]
 
 function Team() {
@@ -195,7 +175,7 @@ export default async function About() {
 
   return (
     <>
-      <PageIntro eyebrow="Разработки" title="Компания для интернет бизнеса">
+      <PageIntro eyebrow="Компания для интернет бизнеса" title="Разработки">
         <p>
           Приветствуем Вас на нашем сайте компании Leget – вашем надежном партнере в мире цифрового успеха!
         </p>
@@ -241,8 +221,8 @@ export default async function About() {
 
       <PageLinks
         className="mt-24 sm:mt-32 lg:mt-40"
-        title="From the blog"
-        intro="Our team of experienced designers and developers has just one thing on their mind; working on your ideas to draw a smile on the face of your users worldwide. From conducting Brand Sprints to UX Design."
+        title="Последние статьи блога"
+        intro="Погружайтесь в мир IT с нашим блогом! Насыщенные статьи об актуальных технологиях, инновациях и трендах мира интернет технологий и наших разработок."
         pages={blogArticles}
       />
 
