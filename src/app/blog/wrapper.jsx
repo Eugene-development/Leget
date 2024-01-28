@@ -28,14 +28,14 @@ export default async function BlogArticleWrapper({ children, _segments }) {
             >
               {formatDate(article.date)}
             </time>
-            <p className="mt-6 text-sm font-semibold text-neutral-950">
+            {/* <p className="mt-6 text-sm font-semibold text-neutral-950">
               Автор: {article.author.name}, {article.author.role}
-            </p>
+            </p> */}
           </header>
-        </FadeIn>с
+        </FadeIn>
 
         <FadeIn>
-          <MDXComponents.wrapper className="mt-24 sm:mt-32 lg:mt-40">
+          <MDXComponents.wrapper className="mt-20 sm:mt-20 lg:mt-20">
             {children}
           </MDXComponents.wrapper>
         </FadeIn>
@@ -44,7 +44,7 @@ export default async function BlogArticleWrapper({ children, _segments }) {
       {moreArticles.length > 0 && (
         <PageLinks
           className="mt-24 sm:mt-32 lg:mt-40"
-          title="More articles"
+          title="Ещё статьи"
           pages={moreArticles}
         />
       )}

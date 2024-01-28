@@ -23,7 +23,7 @@ export default async function Blog() {
     <>
       <PageIntro eyebrow="Последние новости и статьи" title="Наш блог">
         <p>
-          Будьте в курсе последних новостей отрасли, наших новинках и просто интересных событий в мире вэба.
+          Будьте в курсе последних новостей отрасли, наших новинках и просто интересных событий в мире.
         </p>
       </PageIntro>
 
@@ -39,13 +39,13 @@ export default async function Blog() {
                         <Link href={article.href}>{article.title}</Link>
                       </h2>
                       <dl className="lg:absolute lg:left-0 lg:top-0 lg:w-1/3 lg:px-4">
-                        <dt className="sr-only">Published</dt>
+                        <dt className="sr-only">Опубликовано</dt>
                         <dd className="absolute left-0 top-0 text-sm text-neutral-950 lg:static">
                           <time dateTime={article.date}>
                             {formatDate(article.date)}
                           </time>
                         </dd>
-                        <dt className="sr-only">Author</dt>
+                        {/* <dt className="sr-only">Автор</dt>
                         <dd className="mt-6 flex gap-x-4">
                           <div className="flex-none overflow-hidden rounded-xl bg-neutral-100">
                             <Image
@@ -60,7 +60,7 @@ export default async function Blog() {
                             </div>
                             <div>{article.author.role}</div>
                           </div>
-                        </dd>
+                        </dd> */}
                       </dl>
                       <p className="mt-6 max-w-2xl text-base text-neutral-600">
                         {article.description}
