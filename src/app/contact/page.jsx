@@ -89,7 +89,7 @@ function ContactForm() {
 function ContactDetails() {
   return (
     <FadeIn>
-      <h2 className="font-display text-base font-semibold text-neutral-950">
+      <h2 className="mt-0.5 font-display text-base font-semibold text-neutral-950">
         Наши контакты
       </h2>
       {/* <p className="mt-6 text-base text-neutral-600">
