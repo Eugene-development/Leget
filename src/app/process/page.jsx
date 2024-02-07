@@ -89,7 +89,7 @@ function Build() {
       </div>
 
       <Blockquote
-        author={{ name: 'Debra Fiscal', role: 'CEO of Unseal' }}
+        author={{ name: 'Евгений Изумрудов', role: 'Виртуальный ассистент' }}
         className="mt-12"
       >
         На этом этапе мы также проведём обучение вашей команды всему интерфейсу ресурса и обозначим все тонкости его использования.
