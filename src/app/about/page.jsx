@@ -54,7 +54,7 @@ function Culture() {
 
 const team = [
   {
-    title: '001',
+    title: 'Вариант-001',
     people: [
       {
         name: 'Интернет магазин',
@@ -74,7 +74,7 @@ const team = [
     ],
   },
   {
-    title: '002',
+    title: 'Вариант-002',
     people: [
       {
         name: 'Корпоративный сайт',
@@ -94,7 +94,7 @@ const team = [
     ],
   },
   {
-    title: '003',
+    title: 'Вариант-003',
     people: [
       {
         name: 'Фирменный сайт',
