@@ -26,7 +26,7 @@ export function Testimonial({ children, client, className }) {
               </p>
             </blockquote>
             <figcaption className="mt-10">
-              Евгений Изумрудов. CEO компании.
+              Евгений Че. CEO компании.
               {/* <Image src={client.logo} alt={client.name} unoptimized /> */}
             </figcaption>
           </figure>
