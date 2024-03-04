@@ -13,7 +13,7 @@ const navigation = [
       { title: 'Разработки', href: '/about' },
       { title: 'Процессы', href: '/process' },
       // { title: 'Блог', href: '/blog' },
-      { title: 'Контакты', href: '/contact' },
+      { title: 'Блог', href: '/blog' },
     ],
   },
   {
@@ -24,14 +24,14 @@ const navigation = [
       { title: 'Продвижение', href: '/blog' },
     ],
   },
-  // {
-  //   title: 'Блог',
-  //   links: [
-  //     { title: 'FamilyFund', href: '/work/family-fund' },
-  //     { title: 'Unseal', href: '/work/unseal' },
-  //     { title: 'Phobia', href: '/work/phobia' },
-  //   ],
-  // },
+  {
+    title: 'Партнёрство',
+    links: [
+      { title: 'Клиенты', href: '/work/family-fund' },
+      { title: 'Коллаборации', href: '/work/unseal' },
+      { title: 'Агенты', href: '/work/phobia' },
+    ],
+  },
 ]
 
 function Navigation() {
