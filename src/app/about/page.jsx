@@ -38,7 +38,7 @@ function Culture() {
       <Container className="mt-16">
         <GridList>
           <GridListItem title="Сайт" invert>
-            В нашей компании мы всегда стремимся к установлению долгосрочных, продуктивных и доверительных отношений со всеми нашими клиентами. 
+            В нашей компании мы всегда стремимся к установлению долгосрочных, продуктивных и доверительных отношений со всеми нашими клиентами.
           </GridListItem>
           <GridListItem title="Лендинг" invert>
             Для нас взаимное доверие — это фундамент нашего долгосрочного партнерства. Ведь Ваш успех – наша общая основная цель.
@@ -54,11 +54,11 @@ function Culture() {
 
 const team = [
   {
-    title: 'Вариант-001',
+    title: 'Мебель-01',
     people: [
       {
         name: 'Интернет магазин',
-        role: 'Co-Founder / CEO',
+        role: '2500 р/мес',
         image: { src: imageLeslieAlexander },
       },
       {
@@ -67,14 +67,14 @@ const team = [
         image: { src: imageMichaelFoster },
       },
       {
-        name: 'Админ панель',
+        name: 'Панель управления',
         role: 'Partner & Business Relations',
         image: { src: imageDriesVincent },
       },
     ],
   },
   {
-    title: 'Вариант-002',
+    title: 'Окна-01',
     people: [
       {
         name: 'Корпоративный сайт',
@@ -87,14 +87,14 @@ const team = [
         image: { src: imageMichaelFoster },
       },
       {
-        name: 'Админ панель',
+        name: 'Панель управления',
         role: 'Partner & Business Relations',
         image: { src: imageDriesVincent },
       },
     ],
   },
   {
-    title: 'Вариант-003',
+    title: 'Ремонт-01',
     people: [
       {
         name: 'Фирменный сайт',
@@ -102,12 +102,12 @@ const team = [
         image: { src: imageLeslieAlexander },
       },
       {
-        name: 'Michael Foster',
+        name: 'Лендинг',
         role: 'Co-Founder / CTO',
         image: { src: imageMichaelFoster },
       },
       {
-        name: 'Dries Vincent',
+        name: 'Панель управления',
         role: 'Partner & Business Relations',
         image: { src: imageDriesVincent },
       },
@@ -146,9 +146,9 @@ function Team() {
                             <p className="font-display text-base/6 font-semibold tracking-wide text-white">
                               {person.name}
                             </p>
-                            <p className="mt-2 text-sm text-white">
+                            {/* <p className="mt-2 text-sm text-white">
                               {person.role}
-                            </p>
+                            </p> */}
                           </div>
                         </div>
                       </FadeIn>
@@ -176,14 +176,14 @@ export default async function About() {
   return (
     <>
       <PageIntro eyebrow="Компания для интернет бизнеса" title="Разработки">
-        <p>
+        {/* <p>
           Приветствуем Вас на нашем сайте компании Leget – вашем надежном партнере в мире цифрового успеха!
-        </p>
+        </p> */}
         <div className="mt-10 max-w-2xl space-y-6 text-base">
-          <p>
+          {/* <p>
             Мы – команда профессионалов, специализирующихся на поддержке и развитии интернет-бизнеса. Наша миссия – создание уникальных решений, позволяющих вашему онлайн-проекту процветать в современном цифровом мире.
-          </p>
-          
+          </p> */}
+
           {/* <div className='*:list-outside *:list-disc *:ml-8 *:mt-2'>
             <p>
               Наши услуги:

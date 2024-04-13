@@ -117,14 +117,14 @@ function Deliver() {
         Где проходит презентация?
       </h3>
       <List className="mt-8">
-        <ListItem title="Офис">
-          В нашем офисе
+        <ListItem title="Встреча">
+          В любом месте
         </ListItem>
         <ListItem title="Выезд">
           У вас в компании
         </ListItem>
         <ListItem title="Удалённо">
-          Удаленно по сети интернет
+          По сети интернет
         </ListItem>
       </List>
     </Section>
@@ -135,7 +135,7 @@ function Values() {
   return (
     <div className="relative mt-24 pt-24 sm:mt-32 sm:pt-32 lg:mt-40 lg:pt-40">
 
-      
+
       <div className="absolute inset-x-0 top-0 -z-10 h-[884px] overflow-hidden rounded-t-4xl bg-gradient-to-b from-neutral-50">
         <GridPattern
           className="absolute inset-0 h-full w-full fill-neutral-100 stroke-neutral-950/5 [mask-image:linear-gradient(to_bottom_left,white_40%,transparent_50%)]"
@@ -199,7 +199,7 @@ function Culture() {
       <Container className="mt-16">
         <GridList>
           <GridListItem title="Лояльность" invert>
-            В нашей компании мы всегда стремимся к установлению долгосрочных, продуктивных и доверительных отношений со всеми нашими клиентами. 
+            В нашей компании мы всегда стремимся к установлению долгосрочных, продуктивных и доверительных отношений со всеми нашими клиентами.
           </GridListItem>
           <GridListItem title="Доверие" invert>
             Для нас взаимное доверие — это фундамент нашего долгосрочного партнерства. Ведь Ваш успех – наша общая основная цель.
@@ -219,7 +219,7 @@ export default function Process() {
     <>
       <PageIntro eyebrow="Как мы работаем" title="Сотрудничество">
         <p className='my-2'>Предлагаем компаниям воспользоваться нашими разработками, а также мы открыты к разного рода бизнес коллаборациям для взаимного развития.</p>
-        
+
         <p className='my-2'>
           Если Вас заинтересовало наше предложение, то просим Вас связаться с нами по телефону <strong>8 (915) 400-00-20</strong>  или через форму контактной связи. Наши сотрудники дадут полную консультацию о нашей работе и возможностях сервиса.
         </p>
@@ -227,7 +227,7 @@ export default function Process() {
           Предоставляется льготный тестовый период на три месяца.
         </p>
       </PageIntro>
-      <Culture/>
+      <Culture />
 
 
       <div className="mt-24 space-y-24 [counter-reset:section] sm:mt-32 sm:space-y-32 lg:mt-40 lg:space-y-40">
